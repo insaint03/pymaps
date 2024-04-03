@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "maps-decorator"
+version = "0.1.0"
+authors = [
+    {name = "yg.song", email = "insaint03@gmail.com"},
+]
+description = "Simpler way of using map-reduce functionality in Python"
+readme = "README.md"
+keywords = ["mapreduce", "decorator", "multiprocessing"]
+license = "MIT"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = ""
+Issues = ""
+Repository = ""

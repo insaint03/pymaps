@@ -1,0 +1,20 @@
+# python build artifacts
+*.pyc
+__pycache__
+*.so
+
+# ide artifacts
+.idea
+.vscode
+*.iml
+*.ipr
+*.iws
+*.bak
+*.swp
+*~.nib
+*.swp
+*.swo
+*.swn
+*.swm
+
+
