@@ -42,35 +42,26 @@ The goal of this package is to make it simpler. Say at least -
 
 def proceed(N:int) :
     assert 1<N and isinstance(N, int), f'N ought to be >1 int but {N}'
-    # ranging is simpler, though.
-    sequence = range(1, N)
-    
-    # decorator annotates processes
-    _filter = @filters(lambda x: x%2 === 0)
-
-    # then do maps
-    @maps
-    def _maps(X): 
-        (i,x) = X
-        return x*(i+1)
-    
-    # finally, reduces
-    @reduces(init=0)
-    def _total(agg, x) : return agg+x
-    
-    # now get it run
-    return applies(_filter, _maps, _total)(*sequence)
-
+    return apply(
+        # ranging is simpler, though.
+        filters(lambda x: x%2===0),
+        # enumerate
+        enumerate,
+        # do maps
+        maps(lambda i,x: x*(x+i)),
+        # finally, reduce to the result
+        reduces(total, x) : return total + x
+    )
 ```
 
 - [x] map
 - [x] filter
 - [x] reduce
-- [ ] applies
+- [x] apply
 
 ## Further benefits
 
-- [ ] advant multiprocessing
+- [ ] advance multiprocessing
 
 
     

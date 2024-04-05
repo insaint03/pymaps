@@ -1,8 +1,2 @@
-from .pymaps import maps, filters, reduces
+from .pymaps import *
 
-__all__ = [
-    # simple map, filter, reduce functions
-    maps,
-    filters,
-    reduces,
-]

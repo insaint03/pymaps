@@ -3,8 +3,8 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "maps-decorator"
-version = "0.1.0"
+name = "py-map-reduces"
+version = "0.1.0.alpha"
 authors = [
     {name = "yg.song", email = "insaint03@gmail.com"},
 ]
